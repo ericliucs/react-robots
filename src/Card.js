@@ -2,7 +2,7 @@ import "./Card.css";
 
 function Card({ id, name, email }) {
   return (
-    <div className="bg-light-blue dib br3 pa3 ma2 grow bw2 shadow-5">
+    <div className="dib br3 pa3 ma2 grow bw2 card">
       <img src={`https://robohash.org/${id}size=200x200`} alt="Dummy alt."/>
       <div>
         <h2>{name}</h2>
