@@ -1,6 +1,7 @@
 import "./App.css"
-import CardList from "./CardList";
-import SearchBox from "./SearchBox";
+import CardList from "../components/CardList";
+import Scroll from "../components/Scroll";
+import SearchBox from "../components/SearchBox";
 import { useEffect, useRef, useState } from "react";
 
 function App() {
@@ -25,7 +26,9 @@ function App() {
     <div className="tc">
       <h1 id="title">Robot Search</h1>
       <SearchBox onSearchChange={onSearchChange}/>
-      <CardList robots={robots}/>
+      <Scroll>
+        <CardList robots={robots}/>
+      </Scroll>
     </div>
   );
 }
